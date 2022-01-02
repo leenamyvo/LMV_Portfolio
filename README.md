@@ -30,6 +30,11 @@
     * https://docs.microsoft.com/en-us/windows/dev-environment/javascript/nodejs-on-wsl
 * https://github.com/angular/angular-cli/issues/18806
 * https://angular.io/guide/setup-local
+
+https://askubuntu.com/questions/1233623/workaround-to-install-ubuntu-20-04-with-intel-rst-systems
+
+https://www.dell.com/support/kbdoc/en-au/000130549/how-to-unlock-bitlocker-when-it-stops-accepting-recovery-keys
+
 ##### My Configurations
 * Adding Angular project to repo
     <ol>
