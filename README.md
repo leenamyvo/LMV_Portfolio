@@ -37,6 +37,7 @@ https://askubuntu.com/questions/1233623/workaround-to-install-ubuntu-20-04-with-
 
 https://www.dell.com/support/kbdoc/en-au/000130549/how-to-unlock-bitlocker-when-it-stops-accepting-recovery-keys
 
+https://update.angular.io/?v=12.0-13.0
 ##### My Configurations
 * Adding Angular project to repo
     <ol>
@@ -55,7 +56,7 @@ https://www.dell.com/support/kbdoc/en-au/000130549/how-to-unlock-bitlocker-when-
     <li> In Angular project repo: <code> npm install -g lite-server </code> </li>
     <li> <code> ng build --watch </code> </li>
     <li> Appears on localhost:3000 browser page </li>
-    <li> Or for localhost:4200: <code> ng serve -o --poll=10000 </code> </li>
+    <li> Or for localhost:4200: <code> ng serve </code> </li>
 </details>
 <details>
 <summary> <b> Cited Inspiration & Attributions </b> </summary>
