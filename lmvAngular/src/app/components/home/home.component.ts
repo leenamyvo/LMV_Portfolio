@@ -9,11 +9,14 @@ import { ViewChild } from '@angular/core'
   templateUrl: './home.component.html',
   styleUrls: ['./home.component.css']
 })
-export class HomeComponent {
+export class HomeComponent implements OnInit{
 
   /* ngx-drag-scroll carousel - change defualt values as desired */
   // @Input() scrollbar-hidden = 'true';
 
+  constructor() {}
+
+  ngOnInit() {}
 
   /* ngx-drag-scroll carousel nav buttons*/
   @ViewChild('navbuttons', {read: DragScrollComponent, static: true}) ds!: DragScrollComponent;

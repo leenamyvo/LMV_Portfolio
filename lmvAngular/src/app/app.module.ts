@@ -21,8 +21,6 @@ import { FoodComponent } from './components/food/food.component';
 import { AboutComponent } from './components/about/about.component';
 import { ErrorComponent } from './components/error/error.component';
 import { RouterModule } from '@angular/router';
-
-
 @NgModule({
   declarations: [
     AppComponent,
@@ -45,22 +43,7 @@ import { RouterModule } from '@angular/router';
     MatListModule,
     MatButtonModule,
     DragScrollModule,
-    RouterModule.forRoot([
-      {path: 'photo', component: PhotoComponent},
-      {path: 'video', component: VideoComponent},
-      {path: 'design', component: DesignComponent},
-      {path: 'art', component: ArtComponent},
-      {path: 'diy', component: DiyComponent},
-      {path: 'food', component: FoodComponent},
-      {path: 'about', component: AboutComponent},
-
-      /* home is default page */
-      {path: 'home', component: HomeComponent},
-      {path: '', redirectTo: '/home', pathMatch: 'full'},
-
-      /* 404 error page -- MUST BE LAST IN ARRAY */
-      {path: '**', component: ErrorComponent}
-    ])
+    RouterModule.forRoot([])
   ],
   providers: [],
   bootstrap: [HomeComponent]

@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 
+/* manually imported */
 import { HomeComponent } from './components/home/home.component';
 import { PhotoComponent } from './components/photo/photo.component';
 import { VideoComponent } from './components/video/video.component';
@@ -12,6 +13,11 @@ import { AboutComponent } from './components/about/about.component';
 import { ErrorComponent } from './components/error/error.component';
 
 const routes: Routes = [
+
+  /* home is default page */
+  {path: 'home', component: HomeComponent},
+  {path: '', redirectTo: '/home', pathMatch: 'full'},
+
   {path: 'photo', component: PhotoComponent},
   {path: 'video', component: VideoComponent},
   {path: 'design', component: DesignComponent},
@@ -20,12 +26,9 @@ const routes: Routes = [
   {path: 'food', component: FoodComponent},
   {path: 'about', component: AboutComponent},
 
-  /* home is default page */
-  {path: 'home', component: HomeComponent},
-  {path: '', redirectTo: '/home', pathMatch: 'full'},
-
   /* 404 error page -- MUST BE LAST IN ARRAY */
-  {path: '**', component: ErrorComponent}
+  {path: 'error', component: ErrorComponent},
+  {path: '**', redirectTo: '/error'}
 ];
 
 @NgModule({
